@@ -1,8 +1,6 @@
 # pytorch_TPLinker_Plus_Ner
 延申
-
 - 一种基于多头选择的命名实体识别：https://github.com/taishan1994/pytorch_Multi_Head_Selection_Ner
-
 - 一种基于bert_bilstm_crf的命名实体识别：https://github.com/taishan1994/pytorch_bert_bilstm_crf_ner
 - 一种one vs rest方法进行命名实体识别：https://github.com/taishan1994/pytorch_OneVersusRest_Ner
 - 一种级联Bert用于命名实体识别，解决标签过多问题：https://github.com/taishan1994/pytorch_Cascade_Bert_Ner
