@@ -36,7 +36,7 @@ class BertForNer:
         # Train
         global_step = 0
         self.model.zero_grad()
-        eval_steps = 4 #每多少个step打印损失及进行验证
+        eval_steps = 100 #每多少个step打印损失及进行验证
         best_f1 = 0.0
         for epoch in range(self.args.train_epochs):
             for step, batch_data in enumerate(self.train_loader):
