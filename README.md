@@ -13,7 +13,7 @@
 
 基于pytorch的TPLinker_plus进行中文命名实体识别。
 
-之前的多头选择不能够解决嵌套的实体识别，因为它对每一个字符对进行的是多分类，也就是只能属于一种实体类型，而这里的可以识别嵌套的实体。还是和之前其它几种实体识别方式相同的代码模板，这里稍微做了一些修改，主要是在数据加载方面。之前都是预先处理好所有需要的数据保存好，由于tplinker需要更多内存，这里使用DataLoader中的collate_fn对每一批的数据分别进行操作，可以大大减少内存的使用。模型主要是来自这里：[tplinker_plus]([bert4torch/task_sequence_labeling_ner_tplinker_plus.py at master · Tongjilibo/bert4torch (github.com)](https://github.com/Tongjilibo/bert4torch/blob/master/examples/sequence_labeling/task_sequence_labeling_ner_tplinker_plus.py))，需要额外了解的知识有：[Conditional Layer Normalization]([基于Conditional Layer Normalization的条件文本生成 - 科学空间|Scientific Spaces](https://spaces.ac.cn/archives/7124))和[softmax用于多标签分类]([将“softmax+交叉熵”推广到多标签分类问题 - 科学空间|Scientific Spaces](https://www.spaces.ac.cn/archives/7359))。实现具体步骤如下：
+之前的多头选择不能够解决嵌套的实体识别，因为它对每一个字符对进行的是多分类，也就是只能属于一种实体类型，而这里的可以识别嵌套的实体。还是和之前其它几种实体识别方式相同的代码模板，这里稍微做了一些修改，主要是在数据加载方面。之前都是预先处理好所有需要的数据保存好，由于tplinker需要更多内存，这里使用DataLoader中的collate_fn对每一批的数据分别进行操作，可以大大减少内存的使用。模型主要是来自这里：[tplinker_plus]([bert4torch/task_sequence_labeling_ner_tplinker_plus.py at master · Tongjilibo/bert4torch (github.com)](https://github.com/Tongjilibo/bert4torch/blob/master/examples/sequence_labeling/task_sequence_labeling_ner_tplinker_plus.py))，需要额外了解的知识有：[基于Conditional Layer Normalization的条件文本生成 - 科学空间|Scientific Spaces](https://spaces.ac.cn/archives/7124)和[将“softmax+交叉熵”推广到多标签分类问题 - 科学空间|Scientific Spaces](https://www.spaces.ac.cn/archives/7359)。实现运行步骤如下：
 
 - 1、在raw_data下新建一个process.py将数据处理成mid_data下的格式。
 - 2、修改部分参数运行main.py，以进行训练、验证、测试和预测。
