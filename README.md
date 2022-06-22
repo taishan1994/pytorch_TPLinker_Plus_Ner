@@ -1,0 +1,2 @@
+# pytorch_TPLinker_Plus_Ner
+基于pytorch的TPLinker_plus进行中文命名实体识别
