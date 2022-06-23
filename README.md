@@ -1,5 +1,6 @@
 # pytorch_TPLinker_Plus_Ner
 延申
+- 一种基于globalpointer的命名实体识别：https://github.com/taishan1994/pytorch_GlobalPointer_Ner
 - 一种基于多头选择的命名实体识别：https://github.com/taishan1994/pytorch_Multi_Head_Selection_Ner
 - 一种基于bert_bilstm_crf的命名实体识别：https://github.com/taishan1994/pytorch_bert_bilstm_crf_ner
 - 一种one vs rest方法进行命名实体识别：https://github.com/taishan1994/pytorch_OneVersusRest_Ner
