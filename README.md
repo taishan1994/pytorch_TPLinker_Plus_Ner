@@ -20,7 +20,16 @@
 - 2、修改部分参数运行main.py，以进行训练、验证、测试和预测。
 
 模型及数据下载地址：链接：https://pan.baidu.com/s/1B-e-MV1lOMQj2ur5MADRww?pwd=he3e  提取码：he3e
-
+# 依赖
+```
+```
+pytorch==1.6.0
+tensorboasX
+seqeval
+pytorch-crf==0.7.2
+transformers==4.4.0
+```
+```
 # 运行
 
 在16GB的显存下都只能以batch_size=2进行运行。。。
