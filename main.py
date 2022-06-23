@@ -86,7 +86,7 @@ class BertForNer:
                     for d in ids:
                       start, end = map_k2ij[d]
                       pred_tmp[id2tag[j]].append(["".join(tokens[start:end+1]), start])
-                pred_entities.append(pred_tmp)
+                  pred_entities.append(pred_tmp)
 
                 
                 for i in range(batch_size):
@@ -99,7 +99,7 @@ class BertForNer:
                     for d in ids:
                       start, end = map_k2ij[d]
                       true_tmp[id2tag[j]].append(["".join(tokens[start:end+1]), start])
-                true_entities.append(true_tmp)
+                  true_entities.append(true_tmp)
 
             total_count = [0 for _ in range(len(id2tag))]
             role_metric = np.zeros([len(id2tag), 3])
