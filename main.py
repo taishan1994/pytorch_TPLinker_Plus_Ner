@@ -75,8 +75,9 @@ class BertForNer:
                 
                 batch_size = logits.size(0)
                 dev_callbak = dev_callback[eval_step*batch_size:(eval_step+1)*batch_size]
-                pred_tmp = defaultdict(list)
+                
                 for i in range(batch_size):
+                  pred_tmp = defaultdict(list)
                   logit = logits[i, :]
                   tokens = dev_callbak[i]
                   for j in range(self.args.num_tags):
@@ -87,8 +88,9 @@ class BertForNer:
                       pred_tmp[id2tag[j]].append(["".join(tokens[start:end+1]), start])
                 pred_entities.append(pred_tmp)
 
-                true_tmp = defaultdict(list)
+                
                 for i in range(batch_size):
+                  true_tmp = defaultdict(list)
                   logit = labels[i, :]
                   tokens = dev_callbak[i]
                   for j in range(self.args.num_tags):
@@ -132,8 +134,9 @@ class BertForNer:
                 
                 batch_size = logits.size(0)
                 dev_callbak = dev_callback[eval_step*batch_size:(eval_step+1)*batch_size]
-                pred_tmp = defaultdict(list)
+                
                 for i in range(batch_size):
+                  pred_tmp = defaultdict(list)
                   logit = logits[i, :]
                   tokens = dev_callbak[i]
                   for j in range(self.args.num_tags):
@@ -144,8 +147,9 @@ class BertForNer:
                       pred_tmp[id2tag[j]].append(["".join(tokens[start:end+1]), start])
                 pred_entities.append(pred_tmp)
 
-                true_tmp = defaultdict(list)
+                
                 for i in range(batch_size):
+                  true_tmp = defaultdict(list)
                   logit = labels[i, :]
                   tokens = dev_callbak[i]
                   for j in range(self.args.num_tags):
