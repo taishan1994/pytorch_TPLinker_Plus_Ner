@@ -22,13 +22,11 @@
 模型及数据下载地址：链接：https://pan.baidu.com/s/1B-e-MV1lOMQj2ur5MADRww?pwd=he3e  提取码：he3e
 # 依赖
 ```
-```
 pytorch==1.6.0
 tensorboasX
 seqeval
 pytorch-crf==0.7.2
 transformers==4.4.0
-```
 ```
 # 运行
 
