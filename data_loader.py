@@ -70,7 +70,7 @@ class Collate:
           batch_attention_mask.append([1] * len(token_ids))
           batch_token_type_ids.append([0] * len(token_ids))
           for s_i in labels:
-              if s_i[1] >= len(token_ids) - 1 - 1:  # 实体的结尾超过文本长度，则不标记，末尾还有SEP
+              if s_i[1] >= len(token_ids) - 1:  # 实体的结尾超过文本长度，则不标记，末尾还有SEP
                   continue
               batch_labels[i, self.map_ij2k[s_i[0], s_i[1]], self.tag2id[s_i[2]]] = 1
       batch_token_ids = torch.tensor(sequence_padding(batch_token_ids, length=self.maxlen), dtype=torch.long, device=self.device)
