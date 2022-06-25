@@ -203,7 +203,7 @@ class BertForNer:
                 ids = list(*np.where(logit_.cpu().numpy() > 0.5))
                 for d in ids:
                   start, end = map_k2ij[d]
-                  pred_tmp[id2tag[j]].append(["".join(tokens[start:end+1]), start])
+                  pred_tmp[id2tag[j]].append(["".join(tokens[start:end+1]), start-1])
 
             logger.info(dict(pred_tmp))
 
