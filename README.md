@@ -33,7 +33,7 @@ transformers==4.4.0
 在16GB的显存下都只能以batch_size=2进行运行。。。
 
 ```python
-!python main.py \
+python main.py \
 --bert_dir="model_hub/chinese-bert-wwm-ext/" \
 --data_dir="./data/cner/" \
 --log_dir="./logs/" \
