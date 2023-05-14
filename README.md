@@ -1,16 +1,4 @@
 # pytorch_TPLinker_Plus_Ner
-延申
-- 一种基于globalpointer的命名实体识别：https://github.com/taishan1994/pytorch_GlobalPointer_Ner
-- 一种基于多头选择的命名实体识别：https://github.com/taishan1994/pytorch_Multi_Head_Selection_Ner
-- 一种基于bert_bilstm_crf的命名实体识别：https://github.com/taishan1994/pytorch_bert_bilstm_crf_ner
-- 一种one vs rest方法进行命名实体识别：https://github.com/taishan1994/pytorch_OneVersusRest_Ner
-- 一种级联Bert用于命名实体识别，解决标签过多问题：https://github.com/taishan1994/pytorch_Cascade_Bert_Ner
-- 中文命名实体识别最新进展：https://github.com/taishan1994/awesome-chinese-ner
-- 信息抽取三剑客：实体抽取、关系抽取、事件抽取：https://github.com/taishan1994/chinese_information_extraction
-- 一种基于机器阅读理解的命名实体识别：https://github.com/taishan1994/BERT_MRC_NER_chinese
-- W2NER：命名实体识别最新sota：https://github.com/taishan1994/W2NER_predict
-
-****
 
 基于pytorch的TPLinker_plus进行中文命名实体识别。
 
@@ -74,6 +62,16 @@ micro-f1       0.88      0.90      0.89      1598
 虞兔良先生：1963年12月出生，汉族，中国国籍，无境外永久居留权，浙江绍兴人，中共党员，MBA，经济师。
 {'TITLE': [['中共党员', 41], ['经济师', 50]], 'RACE': [['汉族', 18]], 'CONT': [['中国国籍', 21]], 'NAME': [['虞兔良', 1]], 'EDU': [['MBA', 46]], 'LOC': [['浙江绍兴人', 35]]}
 ```
+# 延申
+- 一种基于globalpointer的命名实体识别：https://github.com/taishan1994/pytorch_GlobalPointer_Ner
+- 一种基于多头选择的命名实体识别：https://github.com/taishan1994/pytorch_Multi_Head_Selection_Ner
+- 一种基于bert_bilstm_crf的命名实体识别：https://github.com/taishan1994/pytorch_bert_bilstm_crf_ner
+- 一种one vs rest方法进行命名实体识别：https://github.com/taishan1994/pytorch_OneVersusRest_Ner
+- 一种级联Bert用于命名实体识别，解决标签过多问题：https://github.com/taishan1994/pytorch_Cascade_Bert_Ner
+- 中文命名实体识别最新进展：https://github.com/taishan1994/awesome-chinese-ner
+- 信息抽取三剑客：实体抽取、关系抽取、事件抽取：https://github.com/taishan1994/chinese_information_extraction
+- 一种基于机器阅读理解的命名实体识别：https://github.com/taishan1994/BERT_MRC_NER_chinese
+- W2NER：命名实体识别最新sota：https://github.com/taishan1994/W2NER_predict
 
 
 
